@@ -47,7 +47,7 @@ How to use
 		height: 600,
 		playerVars: {
 			autoplay: 1,
-			thene: 'light'
+			theme: 'light'
 		},
 		// onReady EVENT
 		onReady: function() {
