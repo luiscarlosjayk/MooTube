@@ -39,7 +39,7 @@ provides: [MooTube]
 			
 		},
 		
-	// Properties	
+	// Properties
 		$ready: false,
 		$players: {},
 		
@@ -51,7 +51,7 @@ provides: [MooTube]
 			
 			// Create onYouTubeIframeAPIReady function
 			$global.onYouTubeIframeAPIReady = function() {
-				this.$ready();
+				this.$apiReady();
 			}.bind(this);
 			
 			// Include Youtube Iframe script asynchronously
@@ -67,9 +67,9 @@ provides: [MooTube]
 		 **************************************************************/
 		
 		/**
-		 * $ready
+		 * $apiReady
 		 */
-		$ready: function() {
+		$apiReady: function() {
 			this.$ready = true;
 			this.fireEvent('ready');
 		},
